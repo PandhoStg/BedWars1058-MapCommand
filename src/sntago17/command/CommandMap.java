@@ -46,7 +46,7 @@ public boolean onCommand(CommandSender sender, Command command, String label, St
     		  player1.playSound(player.getLocation(), sound, volumen, pitch);
     	  }
       }catch(IllegalArgumentException e) {
-    	Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(plugin.namepl+"&cYou are using an invalid sound for the version"));  
+    	Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(plugin.namepl+"&cYou are using an invalid sound for the version."));  
       }
       return true;
     }
@@ -64,7 +64,7 @@ public boolean onCommand(CommandSender sender, Command command, String label, St
       		  player1.playSound(player.getLocation(), sound1, volumen1, pitch1);
       	  }
         }catch(IllegalArgumentException e) {
-      	Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(plugin.namepl+"&cYou are using an invalid sound for the version"));  
+      	Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(plugin.namepl+"&cYou are using an invalid sound for the version."));  
         }
         return true;
     }

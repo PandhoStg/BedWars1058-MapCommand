@@ -53,12 +53,12 @@ public class Main extends JavaPlugin{
 			Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&aAuthor: &fSntago17"));
 			Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&aVersion: &e"+version));
 			Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&aDescription: &fYou can see the name of the arena where you are"));
-			Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&cAn Addon of BedWars1058 &8--- &6 Enjoy it..."));	
+			Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&cAn Addon of BedWars1058 &8--- &6Enjoy it..."));	
 		    //registro de comandos
 		    registerCommands();    
 		  }
 	public void onDisable(){
-		Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(namepl+"&cThe plugin has been deactivated."));
+		Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(namepl+"&cThe plugin has been desactivated."));
 		Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&aAuthor: &fSntago17"));
 		Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&aVersion: &e"+version));
 		Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize("&aDescription: &fYou can see the name of the arena where you are"));
