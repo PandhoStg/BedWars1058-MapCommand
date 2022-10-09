@@ -1,7 +1,7 @@
 # BedWars1058-MapCommand
 ![IMapCommand](https://imgur.com/ViwwdmY.png)
 
-![forks](https://img.shields.io/github/forks/PandhoStg/BedWars1058-MapCommand?color=yellow&style=for-the-badge&logo=github) ![discord-online](https://img.shields.io/discord/871270710214000681?color=blue&logo=discord&label=DISCORD&style=for-the-badge) ![code-quality](https://img.shields.io/codacy/grade/1e1dc3fdb98c43a796424b2c4ed71e98?style=for-the-badge&logo=codacy)
+![forks](https://img.shields.io/github/forks/PandhoStg/BedWars1058-MapCommand?color=yellow&style=for-the-badge&logo=github) ![discord-online](https://img.shields.io/discord/1028481009416667136?color=blue&logo=discord&label=DISCORD&style=for-the-badge) ![code-quality](https://img.shields.io/codacy/grade/1e1dc3fdb98c43a796424b2c4ed71e98?style=for-the-badge&logo=codacy)
 
 ## Information
 
@@ -27,7 +27,7 @@ You can still contribute by reporting bugs so they can be fixed.
 - [Discord][discord]
 
 ## Contact
-[![Discord Server](https://discord.com/api/guilds/1028481009416667136/widget.json?style=banner3)](https://discord.gg/6JRmcXJ3)
+[![Discord Server](https://discord.com/api/guilds/1028481009416667136/widget.png?style=banner3)](https://discord.gg/6JRmcXJ3)
 
 [discord]: https://discord.gg/6JRmcXJ3
 
