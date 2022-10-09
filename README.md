@@ -27,7 +27,7 @@ You can still contribute by reporting bugs so they can be fixed.
 - [Discord][discord]
 
 ## Contact
-[![Discord Server](https://discordapp.com/api/guilds/1028481009416667136/widget.png?style=banner3)](https://discord.gg/6JRmcXJ3)
+[![Discord Server](https://discord.com/api/guilds/1028481009416667136/widget.json?style=banner3)](https://discord.gg/6JRmcXJ3)
 
 [discord]: https://discord.gg/6JRmcXJ3
 
