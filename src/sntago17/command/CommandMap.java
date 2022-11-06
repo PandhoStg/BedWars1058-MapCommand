@@ -16,11 +16,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-public class CommandMap implements CommandExecutor{
+public class CommandPlayMap implements CommandExecutor{
 	
 private Main plugin; 
 
-	public CommandMap(Main plugin) {
+	public CommandPlayMap(Main plugin) {
 		this.plugin = plugin; 
 	}
 
@@ -28,14 +28,17 @@ public boolean onCommand(CommandSender sender, Command command, String label, St
 		if(!(sender instanceof Player)){
 			Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(plugin.namepl+"&cYou can't run commands from the console."));
 			return false;
-    } 
+    }else{
+    	
     Player player = (Player) sender;
     IArena arena = Arena.getArenaByPlayer(player);
+    FileConfiguration config = plugin.getConfig();
+    
     if (arena == null)
       return false; 
+    
     if (arena.getStatus() == GameState.waiting || arena.getStatus() == GameState.starting || arena.getStatus() == GameState.playing) {
-      player.sendMessage(Language.getMsg(player, "addons.map.play-map").replace("{map}", arena.getDisplayName()));
-      FileConfiguration config = plugin.getConfig();
+      player.sendMessage(Language.getMsg(player, "addons.map-command.play-map").replace("{map}", arena.getDisplayName()));
       String path = config.getString("sound.play-map-sound");
       String[] separated = path.split(";");
       try {
@@ -43,31 +46,13 @@ public boolean onCommand(CommandSender sender, Command command, String label, St
     	  float pitch = Float.valueOf(separated[2]);
     	  Sound sound = Sound.valueOf(separated[0]);
     	  for(Player player1 : Bukkit.getOnlinePlayers()) {
-    		  player1.playSound(player.getLocation(), sound, volumen, pitch);
+    		  player1.playSound(player1.getLocation(), sound, volumen, pitch);
     	  }
       }catch(IllegalArgumentException e) {
     	Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(plugin.namepl+"&cYou are using an invalid sound for the version."));  
       }
-      return true;
     }
-    
-	if (arena.getStatus() != GameState.waiting || arena.getStatus() != GameState.starting || arena.getStatus() != GameState.playing) {
-        player.sendMessage(Language.getMsg(player, "addons.map.play-not")); 
-        FileConfiguration config = plugin.getConfig();
-        String path = config.getString("sound.play-notmap-sound");
-        String[] separated = path.split(";");
-        try {
-      	  int volumen1 = Integer.valueOf(separated[1]);
-      	  float pitch1 = Float.valueOf(separated[2]);
-      	  Sound sound1 = Sound.valueOf(separated[0]);
-      	  for(Player player1 : Bukkit.getOnlinePlayers()) {
-      		  player1.playSound(player.getLocation(), sound1, volumen1, pitch1);
-      	  }
-        }catch(IllegalArgumentException e) {
-      	Bukkit.getConsoleSender().sendMessage(ColorUtil.colorize(plugin.namepl+"&cYou are using an invalid sound for the version."));  
-        }
-        return true;
+    return true;
     }
-    return false;
   }
 }
