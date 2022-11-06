@@ -20,7 +20,6 @@ public class Main extends JavaPlugin{
 	
 	  //public String Integer;
 	  public String playMap;
-	  public String playNotMap;
 	  
 	public static Main instance;
 	  
@@ -73,12 +72,10 @@ public class Main extends JavaPlugin{
 	    YamlConfiguration config = YamlConfiguration.loadConfiguration(file);
 	    config.options().copyDefaults(true);
 	    config.addDefault("sound.play-map-sound", "NOTE_PLING;10;2");
-	    config.addDefault("sound.play-notmap-sound", "NOTE_PLING;10;2");
 	    config.options().header("Map Command Add-on for BedWars1058 Mini-game.\nDocumentation:\nSounds for latest version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html\nSounds for 1.8 or older: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html");
 	    try {
 	        config.save(file);
 	      } catch (IOException iOException) {}
 	    this.playMap = config.getString("sound.play-map-sound");
-	    this.playNotMap = config.getString("sound.play-notmap-sound");
 	  }
 }
