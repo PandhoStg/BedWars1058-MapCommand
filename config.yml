@@ -1,6 +1,15 @@
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-# |         Bedwars1058 Map           |
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | MAP-COMMAND ADDON CONFIGURATION        |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# Version: 1.0.2
+# Author: Sntago17
+# Issues: https://github.com/PandhoStg/BedWars1058-MapCommand/issues
+# Wiki: https://github.com/PandhoStg/BedWars1058-MapCommand/wiki
+# Discord: https://discord.gg/enspQ69k
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | SETTINGS                                 |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
 sound:
     play-map-sound: "NOTE_PLING;10;2"
-    play-notmap-sound: "NOTE_PLING;10;2"
