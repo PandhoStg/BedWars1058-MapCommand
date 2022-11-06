@@ -1,10 +1,11 @@
 main: sntago17.main.Main
-version: 1.0.1
+version: 1.0.2
 api-version: 1.8.8
 name: BedWars1058-MapCommand
 author: Sntago17
 softdepend: [BedWars1058]
 description: View Map Command
+website: https://github.com/PandhoStg/BedWars1058-MapCommand
 
 commands: 
   map:
