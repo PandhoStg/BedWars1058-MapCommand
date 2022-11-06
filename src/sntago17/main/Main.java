@@ -10,7 +10,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
-import sntago17.command.CommandMap;
+
+import sntago17.command.CommandPlayMap;
 import sntago17.utils.ColorUtil;
 
 public class Main extends JavaPlugin{
@@ -65,14 +66,13 @@ public class Main extends JavaPlugin{
 	}
 	
 	public void registerCommands(){
-		this.getCommand("map").setExecutor(new CommandMap(this)); ;
+		this.getCommand("map").setExecutor(new CommandPlayMap(this));
 	}
 	  
 	  public void initConfig(File file) {
 	    YamlConfiguration config = YamlConfiguration.loadConfiguration(file);
 	    config.options().copyDefaults(true);
 	    config.addDefault("sound.play-map-sound", "NOTE_PLING;10;2");
-	    config.options().header("Map Command Add-on for BedWars1058 Mini-game.\nDocumentation:\nSounds for latest version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html\nSounds for 1.8 or older: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html");
 	    try {
 	        config.save(file);
 	      } catch (IOException iOException) {}
